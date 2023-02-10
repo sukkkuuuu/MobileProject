@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".SubActivity" >
+
+
+    <!--    텍스트 메시지 작성 기능-->
+    <EditText
+        android:id="@+id/diary_content"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="20dp"
+        android:hint="메시지 입력"
+        android:gravity="top"
+        />
+
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diary_content"
+        android:layout_toEndOf="@id/save_btn"
+        android:text="뒤로"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diary_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="50dp"
+        android:text="저장" />
+
+</RelativeLayout>
